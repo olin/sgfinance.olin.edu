@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+$font: 'Pathway Gothic One', sans-serif;
+$olin-blue: #0087c6;
+$background: #faf7f4;
+
+html, body, #container {
+    margin: 0;
+}
+
+.app {
+    font-family: $font;
+    background-color: $background;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        color: $olin-blue;
+        font-size: 2em;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .charts {
+        background-color: white;
+        flex: 1 1 auto;
+        min-height: 628px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .chart {
+
+        }
+    }
+}
