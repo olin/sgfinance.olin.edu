@@ -9,15 +9,14 @@ $background: #faf7f4;
 
 $border: 1px solid darkslategrey;
 
-html, body, #container {
+body {
     margin: 0;
+    background-color: $background;
 }
 
 .app {
     font-family: $title-font;
-    background-color: $background;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -31,6 +30,7 @@ html, body, #container {
     .content {
         font-family: $body-font;
         display: flex;
+        padding: 1em;
 
         .charts {
             flex: 1 1 auto;
@@ -40,7 +40,7 @@ html, body, #container {
             justify-content: space-between;
 
             .chart {
-                margin: 0 1em;
+                margin-right: 1em;
 
                 &+.chart {
                     margin-top: 1em;
@@ -52,7 +52,6 @@ html, body, #container {
             flex: 1 1 auto;
             display: flex;
             flex-direction: column;
-            margin-right: 1em;
             min-width: 10em;
 
             .form-link {
