@@ -17,7 +17,7 @@ export const formLinks = [
     {
         name: 'Class Fund Spending Form',
         link: 'https://goo.gl/forms/fxj9FyX7Z4Khm9yl1',
-        description: 'Use this form if you\'ve spent money for events or supplies for your class.'
+        description: 'Use this form if you\'ve spent money on events or supplies for your class.'
     },
     {
         name: 'OCF Reimbursement Form',
