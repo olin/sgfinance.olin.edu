@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-$font: 'Pathway Gothic One', sans-serif;
+$title-font: 'Pathway Gothic One', sans-serif;
+$body-font: 'Lato', sans-serif;
+
 $olin-blue: #0087c6;
 $background: #faf7f4;
+
+$border: 1px solid darkslategrey;
 
 html, body, #container {
     margin: 0;
 }
 
 .app {
-    font-family: $font;
+    font-family: $title-font;
     background-color: $background;
     width: 100vw;
     height: 100vh;
@@ -23,16 +28,56 @@ html, body, #container {
         padding: 0.5em;
     }
 
-    .charts {
-        background-color: white;
-        flex: 1 1 auto;
-        min-height: 628px;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .content {
+        font-family: $body-font;
+        display: flex;
 
-        .chart {
+        .charts {
+            flex: 1 1 auto;
+            min-height: 628px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
 
+            .chart {
+                margin: 0 1em;
+
+                &+.chart {
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        .links {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            margin-right: 1em;
+            min-width: 10em;
+
+            .form-link {
+                padding: 0.8em;
+                background-color: white;
+
+                &+.form-link {
+                    margin-top: 1em;
+                }
+
+                .form-name {
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 0.4em;
+
+                    & > a {
+                        text-decoration: none;
+                        color: $olin-blue;
+
+                        &::after {
+                            content: ' \1F5D7';
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 
 import BudgetChart from './BudgetChart';
 import SpendingChart from './SpendingChart';
+import FormLink from './FormLink'
+import { formLinks } from '../constants';
 
 class Title extends Component {
     render() {
@@ -18,11 +20,18 @@ export default class App extends Component {
         return (
             <div className="app">
                 <Title/>
-                <div className="charts">
-                    <BudgetChart/>
-                    <SpendingChart/>
-                    <div className="budget-link">
-                        <div className=""></div>
+                <div className="content">
+                    <div className="charts">
+                        <BudgetChart/>
+                        <SpendingChart/>
+                        <div className="budget-link">
+                            <div className=""></div>
+                        </div>
+                    </div>
+                    <div className="links">
+                        {formLinks.map((form, index) =>
+                            <FormLink key={index} {...form}/>
+                        )}
                     </div>
                 </div>
             </div>
