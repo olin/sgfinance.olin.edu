@@ -21,13 +21,6 @@ export default class App extends Component {
             <div className="app">
                 <Title/>
                 <div className="content">
-                    <div className="charts">
-                        <BudgetChart/>
-                        <SpendingChart/>
-                        <div className="budget-link">
-                            <div className=""></div>
-                        </div>
-                    </div>
                     <div className="links">
                         {formLinks.map((form, index) =>
                             <FormLink key={index} {...form}/>

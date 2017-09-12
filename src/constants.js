@@ -1,32 +1,33 @@
 export const formLinks = [
     {
         name: 'Club Funding Request Form',
-        link: 'https://goo.gl/forms/gOm3HJB1KTkOaajr2',
+        link: 'https://docs.google.com/forms/d/1OLBDtyAUJ2GuFXupzXD72HP2XGz41PeAI1gNXPrqavA',
         description: 'Use this form to request funds from CCO for your club. (Not necessary for organizations.)'
     },
     {
         name: 'CCO Spending Form',
-        link: 'https://goo.gl/forms/3Cv118Rs1j4h0cwf2',
+        link: 'https://goo.gl/forms/TkCARTwDpQzYrzs22',
         description: 'Use this form if you\'ve spent money on behalf of a club or organization.'
     },
     {
         name: 'SG Spending Form',
-        link: 'https://goo.gl/forms/CLooc9GhNbwfpbpM2',
+        link: 'https://goo.gl/forms/AOy6zGyhVanG3Woz1',
         description: 'Use this form if you\'ve spent money on behalf of CORe, SAC, SERV, or the Honor Board.'
     },
     {
         name: 'Class Fund Spending Form',
-        link: 'https://goo.gl/forms/fxj9FyX7Z4Khm9yl1',
+        link: 'https://goo.gl/forms/uFIfzAWgXDfMjTcj1',
         description: 'Use this form if you\'ve spent money on events or supplies for your class.'
     },
     {
         name: 'OCF Reimbursement Form',
-        link: 'https://goo.gl/forms/nYC29B6AYBEFHBZK2',
+        link: 'https://goo.gl/forms/tFNL39JO9MiinR6j1',
         description: 'Use this form to get reimbursed out of the Christian Club account (not from the CORe account).'
     },
     {
         name: 'Online Purchase Request Form',
-        link: 'https://goo.gl/forms/ueHRV7c4Z0DqKSbq1',
+        link: 'https://goo.gl/forms/JNMtQwdpJrhvLu622',
         description: 'Use this form to request an online purchase order.'
     }
 ];
+    
